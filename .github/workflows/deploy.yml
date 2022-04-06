@@ -15,12 +15,12 @@ jobs:
       - name: Build
         run: |
           npm ci
-          npm run build
+          npm run build && ls
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: out
+          FOLDER: theme-test-1/out
           CLEAN: true
