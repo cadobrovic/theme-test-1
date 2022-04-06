@@ -10,12 +10,12 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.png" />
+          {/* <link rel="icon" href="/favicon.png" /> */}
           <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
             rel="stylesheet"
           />
-          {/* <link rel="shortcut icon" href="/static/favicon.png" /> */}
+          <link rel="shortcut icon" href="/theme-test-1/static/favicon.png" />
         </Head>
         <body>
           <Main />
