@@ -22,11 +22,9 @@ module.exports = withPlugins(
       // path: "", // Uncomment this line for STATIC EXPORT
     },
     env: {
-      production_type: "server", // Change variable to "static" for STATIC EXPORT
+      production_type: "static", // Change variable to "static" for STATIC EXPORT
     },
-    // trailingSlash: true, // Uncomment this line for STATIC EXPORT
-  },
-  {
+    trailingSlash: true, // Uncomment this line for STATIC EXPORT
     basePath,
     assetPrefix: `${basePath}/`
   }
