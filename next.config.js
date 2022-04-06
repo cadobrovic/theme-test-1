@@ -24,8 +24,8 @@ module.exports = withPlugins(
     env: {
       production_type: "static", // Change variable to "static" for STATIC EXPORT
     },
-    trailingSlash: true, // Uncomment this line for STATIC EXPORT
-    basePath: '/theme-test-1',
-    assetPrefix: '/theme-test-1/'
+    trailingSlash: true // Uncomment this line for STATIC EXPORT
+    // basePath: '/theme-test-1',
+    // assetPrefix: '/theme-test-1/'
   }
 )
