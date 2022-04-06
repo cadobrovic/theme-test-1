@@ -5,7 +5,7 @@ const CustomImage = (props) => {
   if (process.env.production_type === "static") {
     return (
       <img
-        src={`/theme-test-1/${props.src}`}
+        src={`/theme-test-1${props.src}`}
         alt={props.alt}
         width={props.width}
         height={props.height}

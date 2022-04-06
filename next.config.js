@@ -29,4 +29,3 @@ module.exports = withPlugins(
     assetPrefix: '/theme-test-1/',
   }
 )
-
