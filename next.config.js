@@ -3,6 +3,9 @@ const withPlugins = require("next-compose-plugins")
 const reactSvg = require("next-react-svg")
 const path = require("path")
 
+const basePath = process.env.NODE_ENV === 'production' ? '/theme-test-1' : '';
+
+
 module.exports = withPlugins(
   [
     [
@@ -22,5 +25,9 @@ module.exports = withPlugins(
       production_type: "server", // Change variable to "static" for STATIC EXPORT
     },
     // trailingSlash: true, // Uncomment this line for STATIC EXPORT
+  },
+  {
+    basePath,
+    assetPrefix: `${basePath}/`
   }
 )
