@@ -116,7 +116,7 @@ const Index = () => {
               <h3 className="display-3 fw-bold text-serif text-shadow mb-5">
                 {data.jumbotron.title}
               </h3>
-              <Link href={data.jumbotron.link} passHref>
+              <Link href={`/theme-test-1${data.jumbotron.link}`} passHref as={data.jumbotron.link}>
                 <Button variant="light">Get started</Button>
               </Link>
             </div>
@@ -150,7 +150,7 @@ const Index = () => {
                 md="4"
                 className="d-md-flex align-items-center justify-content-end"
               >
-                <Link href={data.blogPosts.buttonLink}>
+                <Link href={`/theme-test-1${data.blogPosts.buttonLink}`} as={data.blogPosts.buttonLink}>
                   <a className="text-muted text-sm">
                     {data.blogPosts.button}
                     <FontAwesomeIcon
