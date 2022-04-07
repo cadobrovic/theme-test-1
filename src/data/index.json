@@ -1,7 +1,8 @@
 {
     "hero": {
-        "title": "Stay like a local",
-        "subTitle": "The best holiday experience"
+        "title": "The Curated Marketplace For RFPs",
+        "subTitle": "The best holiday experience",
+        "img": "trucks_compressed.jpg"
     },
     "swiperPoster": "photo-1501621965065-c6e1cf6b53e2-lowres.jpg",
     "swiperImages": [
@@ -29,31 +30,31 @@
         }
     ],
     "topBlocks": {
-        "title": "Booking with us is easy",
-        "subTitle": "One-of-a-kind vacation rentals",
+        "title": "The Curated Marketplace For RFPs",
+        "subTitle": "No Negotiating. No Redlines. No Delays.",
         "blocks": [
             {
-                "title": "Find the perfect rental",
-                "content": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in",
+                "title": "My vendor cancelled and I need service tomorrow!",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
                 "icon": "destination-map-1"
             },
             {
-                "title": "Book with confidence",
-                "content": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+                "title": "My contract renews in 30 days; can I find a better price?",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
                 "icon": "pay-by-card-1"
             },
             {
-                "title": "Enjoy your vacation",
-                "content": "His room, a proper human room although a little too small, lay peacefully between its four familiar",
+                "title": "My RFP is complex and confidential; I need an account manager",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
                 "icon": "heart-1"
             }
         ]
     },
     "jumbotron": {
-        "title": "Ready for your next holidays?",
-        "button": "Get started",
+        "title": "The Platform For Procurement",
+        "button": "Request Beta Access",
         "link": "/category-rooms",
-        "img": "img/photo/photo-1497436072909-60f360e1d4b1.jpg"
+        "img": "img/photo/trucks_compressed.jpg"
     },
     "testimonials": {
         "title": "Our dear customers said about us",

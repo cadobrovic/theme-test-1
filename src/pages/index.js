@@ -31,21 +31,20 @@ export async function getStaticProps() {
   }
 }
 
+{/* {data.hero.img && (
+          <Image
+            src={`/content/img/photo/${data.hero.img}`}
+            alt={data.hero.title}
+            className="bg-image"
+            loading="eager"
+            layout="fill"
+          />
+        )} */}
+
 const Index = () => {
   return (
     <React.Fragment>
-      <section className="hero-home">
-        <Swiper
-          className="hero-slider"
-          wrapperClasses="dark-overlay"
-          data={data.swiperImages}
-          simple
-          effect="fade"
-          speed={2000}
-          autoplay={{
-            delay: 10000,
-          }}
-        />
+      {/* <section className="hero-home">
         <Container className="py-6 py-md-7 text-white z-index-20">
           <Row>
             <Col xl="10">
@@ -59,21 +58,15 @@ const Index = () => {
                   </h1>
                 </div>
               )}
-              <SearchBar
-                options={data.searchOptions}
-                className="mt-5 p-3 p-lg-1 ps-lg-4"
-                btnClassName="rounded-pill"
-                id="index-1-searchbar"
-              />
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {data.topBlocks && (
         <section className="py-6 bg-gray-100">
           <Container>
             <div className="text-center pb-lg-4">
-              <p className="subtitle text-secondary">
+              <p className="subtitle">
                 {data.topBlocks.subTitle}
               </p>
               <h2 className="mb-5">{data.topBlocks.title}</h2>
@@ -101,8 +94,8 @@ const Index = () => {
           </Container>
         </section>
       )}
-      <Guides />
-      <LastMinute greyBackground />
+      {/* <Guides /> */}
+      {/* <LastMinute greyBackground /> */}
       {data.jumbotron && (
         <section className="py-7 position-relative dark-overlay">
           <Image
@@ -117,13 +110,13 @@ const Index = () => {
                 {data.jumbotron.title}
               </h3>
               <Link href={data.jumbotron.link} passHref>
-                <Button variant="light">Get started</Button>
+                <Button variant="light">{data.jumbotron.button}</Button>
               </Link>
             </div>
           </Container>
         </section>
       )}
-      {data.testimonials && (
+      {/* {data.testimonials && (
         <section className="py-7">
           <Container>
             <div className="text-center">
@@ -135,8 +128,8 @@ const Index = () => {
             <SwiperTestimonial data={data.testimonials.swiperItems} />
           </Container>
         </section>
-      )}
-      {blog.posts && (
+      )} */}
+      {/* {blog.posts && (
         <section className="py-6 bg-gray-100">
           <Container>
             <Row className="mb-5">
@@ -178,9 +171,9 @@ const Index = () => {
             </Row>
           </Container>
         </section>
-      )}
+      )} */}
 
-      <Instagram />
+      {/* <Instagram /> */}
     </React.Fragment>
   )
 }
