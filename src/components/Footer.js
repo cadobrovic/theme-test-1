@@ -22,6 +22,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
+  const repoPath = '/theme-test-1/content/svg/'
   return (
     <footer className="position-relative z-index-10 d-print-none">
       <div className="py-6 bg-gray-200 text-muted">
@@ -151,14 +152,14 @@ const Footer = () => {
                   <img
                     width="32"
                     height="32"
-                    src="/content/svg/visa.svg"
+                    src={`${repoPath}visa.svg`}
                     alt="..."
                     className="w-2rem"
                   />
                 </li>
                 <li className="list-inline-item">
                   <img
-                    src="/content/svg/mastercard.svg"
+                    src={`${repoPath}mastercard.svg`}
                     width="32"
                     height="32"
                     alt="..."
@@ -167,7 +168,7 @@ const Footer = () => {
                 </li>
                 <li className="list-inline-item">
                   <img
-                    src="/content/svg/paypal.svg"
+                    src={`${repoPath}paypal.svg`}
                     width="32"
                     height="32"
                     alt="..."
@@ -176,7 +177,7 @@ const Footer = () => {
                 </li>
                 <li className="list-inline-item">
                   <img
-                    src="/content/svg/western-union.svg"
+                    src={`${repoPath}western-union.svg`}
                     width="32"
                     height="32"
                     alt="..."
