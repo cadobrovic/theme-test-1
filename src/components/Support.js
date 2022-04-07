@@ -34,12 +34,10 @@ const Support = () => {
           <Row>
             <Col lg="10" xl="8" className="mx-auto text-center">
               <h4 className="subtitle text-primary mb-4">
-                Get Support From Real People
+                Light RFP Conceirge Service
               </h4>
               <p className="text-muted mb-5">
-                Samsa was a travelling salesman - and above it there hung a
-                picture that he had recently cut out of an illustrated magazine
-                and housed in a nice, gilded frame.
+                Need custom, expidited service? Drop us a line and we'll be in touch within 48 hours.
               </p>
               <ul className="list-unstyled d-flex flex-wrap justify-content-center">
                 {team.map((member) => (
@@ -83,10 +81,7 @@ const Support = () => {
                 </Card.Header>
                 <Card.Body>
                   <p className="text-muted">
-                    He must have tried it a hundred times, shut his eyes so that
-                    he wouldn't have to look at the floundering legs, and only
-                    stopped when he began to feel a mild, dull pain there that
-                    he had never felt before.
+                    For contracts above <strong>$200,000</strong> please call <strong>516 350 3316</strong>
                   </p>
                   <Button href="#">Let us know</Button>
                 </Card.Body>

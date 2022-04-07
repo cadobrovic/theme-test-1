@@ -9,6 +9,7 @@ import LastMinute from "../components/LastMinute"
 import Guides from "../components/Guides"
 import Instagram from "../components/Instagram"
 import CardPost from "../components/CardPost"
+import Support from "../components/Support"
 
 import SwiperTestimonial from "../components/SwiperTestimonial"
 
@@ -96,6 +97,8 @@ const Index = () => {
       )}
       {/* <Guides /> */}
       {/* <LastMinute greyBackground /> */}
+      {/* *** SUPPORT SECTION *** */}
+      <Support />
       {data.jumbotron && (
         <section className="py-7 position-relative dark-overlay">
           <Image

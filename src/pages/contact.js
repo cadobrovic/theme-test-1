@@ -7,6 +7,7 @@ import { Container, Row, Col, Form, Button, Breadcrumb } from "react-bootstrap"
 import data from "../data/contact.json"
 import Image from "../components/CustomImage"
 import Icon from "../components/Icon"
+import Support from "../components/Support"
 import Map from "../components/Map"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -33,6 +34,7 @@ export async function getStaticProps() {
 const Contact = () => {
   return (
     <React.Fragment>
+      <Support />
       <section className="hero py-6 py-lg-7 text-white dark-overlay">
         {data.img && (
           <Image
