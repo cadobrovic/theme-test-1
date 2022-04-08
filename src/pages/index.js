@@ -15,6 +15,7 @@ import SwiperTestimonial from "../components/SwiperTestimonial"
 
 import data from "../data/index.json"
 import priceData from "../data/pricing_live.json"
+import featuresData from "../data/features_live.json"
 import blog from "../data/blog.json"
 import Icon from "../components/Icon"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -44,6 +45,11 @@ export async function getStaticProps() {
         )} */}
 
 const Index = () => {
+  const groupByN = (n, data) => {
+    let result = []
+    for (let i = 0; i < data.length; i += n) result.push(data.slice(i, i + n))
+    return result
+  }
   return (
     <React.Fragment>
       {/* <section className="hero-home">
@@ -99,6 +105,36 @@ const Index = () => {
       {/* <Guides /> */}
       {/* <LastMinute greyBackground /> */}
       
+      {/* *** Features *** */}
+      <section className="py-6">
+        <Container>
+          {featuresData.questionGroups &&
+            featuresData.questionGroups.map((group) => {
+              const groupedQuestions =
+                group.questions && groupByN(2, group.questions)
+              return (
+                <div key={group.title} className="py-4">
+                  <h2 className="mb-5 text-primary">{group.title}</h2>
+                  <Row>
+                    {groupedQuestions.map((questions) => (
+                      <Col md="6" key={questions[0].title}>
+                        {questions.map((question) => (
+                          <React.Fragment key={question.title}>
+                            <h5>{question.title}</h5>
+                            <p className="text-muted mb-4">
+                              {question.content}
+                            </p>
+                          </React.Fragment>
+                        ))}
+                      </Col>
+                    ))}
+                  </Row>
+                </div>
+              )
+            })}
+        </Container>
+      </section>
+
       {/* *** PRICING *** */}
       <section className="py-6">
         <Container>

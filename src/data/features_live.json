@@ -1,0 +1,49 @@
+{
+    "title": "F.A.Q.s",
+    "subtitle": "Frequently asked questions",
+    "content": "As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.",
+    "questionGroups": [
+        {
+            "title": "Posting Contracts On Light RFP",
+            "questions": [
+                {
+                    "title": "RFP Auctions",
+                    "content": "Post RFPs publicly or invite vendors privately from a marketplace of vetted and reviewed partners. Accept bids or buy it now offers today."
+                },
+                {
+                    "title": "Contract Your Way",
+                    "content": "Contract 100% on your terms - Light RFP removes vendors who attempt to negotiate post auction or fall below our service quality review threshholds."
+                },
+                {
+                    "title": "No Negotiation",
+                    "content": "No pre-auction emailing or negotiating — coordinate services after the contract has been signed."
+                },
+                {
+                    "title": "No Fees For Posting",
+                    "content": "Completely free to post contracts. Success fee of 5% charged to the winner of each contract."
+                }
+            ]
+        },
+        {
+            "title": "Bidding On Light RFP Contracts",
+            "questions": [
+                {
+                    "title": "Win New Contracts Today",
+                    "content": "Immediately bid on RFPs with a 5% success fee charged to the winner of each auction."
+                },
+                {
+                    "title": "Document Review",
+                    "content": "Legal document review occurs pre-bid, eliminating legal delays due to redlines after winning the auction."
+                },
+                {
+                    "title": "Digital Signing",
+                    "content": "Digitally sign documents immediately after winning an RFP."
+                },
+                {
+                    "title": "Seamless Onboarding",
+                    "content": "Client coordination details, tax, insurance, and creditworthiness information is exchanged post auction."
+                }
+            ]
+        }
+    ]
+}
