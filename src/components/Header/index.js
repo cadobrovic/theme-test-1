@@ -68,12 +68,13 @@ const Header = (props) => {
             {/* NAVBAR BRAND */}
             <Link href="/" passHref>
               <Navbar.Brand className="py-1">
-                <img
+                {/* <img
                   src="/theme-test-1/content/svg/logo.svg"
                   width="138"
                   height="31"
                   alt="Directory logo"
-                />
+                /> */}
+                <h4 className="hero-heading mb-0">Light RFP</h4>
               </Navbar.Brand>
             </Link>
             {/* END NAVBAR BRAND */}

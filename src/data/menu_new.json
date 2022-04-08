@@ -4,10 +4,6 @@
     "link": "/"
   },
   {
-    "title": "White Glove Service",
-    "link": "/contact"
-  },
-  {
     "title": "Docs",
     "hideToLoggedUser": true,
     "dropdown": [

@@ -73,11 +73,11 @@ const Index = () => {
       {data.topBlocks && (
         <section className="py-6 bg-gray-100">
           <Container>
-            <div className="text-center pb-lg-4">
-              <h2 className="mb-5">{data.topBlocks.title}</h2>
+            <div className="text-center pb-lg-4 mb-5">
+              <h2 className="mb-2">{data.topBlocks.title}</h2>
               <p className="subtitle">
                 {data.topBlocks.subTitle}
-              </p>
+              </p>  
             </div>
             <Row>
               {data.topBlocks.blocks.map((block) => (
