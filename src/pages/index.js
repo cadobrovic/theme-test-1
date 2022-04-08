@@ -24,6 +24,7 @@ import { faAngleDoubleRight, faTimes, faCheck } from "@fortawesome/free-solid-sv
 export async function getStaticProps() {
   return {
     props: {
+      hideFooter: true,
       nav: {
         light: true,
         classes: "shadow",
