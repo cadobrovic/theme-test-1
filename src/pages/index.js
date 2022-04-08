@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "../components/CustomImage"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col, Card, Button, Breadcrumb } from "react-bootstrap"
 
 import Swiper from "../components/Swiper"
 import SearchBar from "../components/SearchBar"
@@ -14,10 +14,11 @@ import Support from "../components/Support"
 import SwiperTestimonial from "../components/SwiperTestimonial"
 
 import data from "../data/index.json"
+import priceData from "../data/pricing_live.json"
 import blog from "../data/blog.json"
 import Icon from "../components/Icon"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
+import { faAngleDoubleRight, faTimes, faCheck } from "@fortawesome/free-solid-svg-icons"
 
 export async function getStaticProps() {
   return {
@@ -67,10 +68,10 @@ const Index = () => {
         <section className="py-6 bg-gray-100">
           <Container>
             <div className="text-center pb-lg-4">
+              <h2 className="mb-5">{data.topBlocks.title}</h2>
               <p className="subtitle">
                 {data.topBlocks.subTitle}
               </p>
-              <h2 className="mb-5">{data.topBlocks.title}</h2>
             </div>
             <Row>
               {data.topBlocks.blocks.map((block) => (
@@ -97,8 +98,64 @@ const Index = () => {
       )}
       {/* <Guides /> */}
       {/* <LastMinute greyBackground /> */}
+      
+      {/* *** PRICING *** */}
+      <section className="py-6">
+        <Container>
+        <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
+          <Row>
+            {priceData.columns &&
+              priceData.columns.map((column, index) => (
+                <Col key={column.title} lg="6">
+                  <Card
+                    className={`mb-5 mb-lg-0 border-0 shadow`}
+                  >
+                    {/* {index === 1 && <div className="card-status bg-primary" />} */}
+                    <Card.Body>
+                      <h2 className="text-base subtitle text-center text-primary py-3">
+                        {column.title}
+                      </h2>
+                      <p className="text-muted text-center">
+                        <span className="h1 text-dark">{column.price}</span>
+                        <span className="ms-2">/ contract</span>
+                      </p>
+                      <hr />
+                      <ul className="fa-ul my-4">
+                        {column.items.map((item) => (
+                          <li
+                            key={item.title}
+                            className={`mb-3 ${
+                              item.status ? "" : "text-muted"
+                            }`}
+                          >
+                            {item.status ? (
+                              <span className="fa-li text-primary">
+                                <FontAwesomeIcon icon={faCheck} />
+                              </span>
+                            ) : (
+                              <span className="fa-li">
+                                <FontAwesomeIcon icon={faTimes} />
+                              </span>
+                            )}
+                            {item.title}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="text-center">
+                        {/* <Button href="#" variant="outline-primary">
+                          Select
+                        </Button> */}
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+          </Row>
+        </Container>
+      </section>
       {/* *** SUPPORT SECTION *** */}
       <Support />
+      {/* *** CALL TO ACTION *** */}
       {data.jumbotron && (
         <section className="py-7 position-relative dark-overlay">
           <Image

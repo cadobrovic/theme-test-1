@@ -1,0 +1,51 @@
+{
+    "title": "Plans & Pricing",
+    "subtitle": "Pricing",
+    "content": "Flexible options that move with you",
+    "columns": [
+        {
+            "title": "Poster",
+            "price": "5%",
+            "items": [
+                {
+                    "title": "RFP Auctions",
+                    "status": true
+                },
+                {
+                    "title": "Contract Your Way",
+                    "status": true
+                },
+                {
+                    "title": "No Negotiation",
+                    "status": true
+                },
+                {
+                    "title": "No Fees For Posting",
+                    "status": true
+                }
+            ]
+        },
+        {
+            "title": "Bidder",
+            "price": "Free",
+            "items": [
+                {
+                    "title": "Win New Contracts Today",
+                    "status": true
+                },
+                {
+                    "title": "Document Review",
+                    "status": true
+                },
+                {
+                    "title": "Digital Signing",
+                    "status": true
+                },
+                {
+                    "title": "Seamless Onboarding",
+                    "status": true
+                }
+            ]
+        }
+    ]
+}

@@ -37,12 +37,12 @@ const Support = () => {
                 Light RFP Conceirge Service
               </h4>
               <p className="text-muted mb-5">
-                Need custom, expidited service? Drop us a line and we'll be in touch within 48 hours.
+              Our team is standing by to take the pain out of RFPs. We can post RFPs to the platform for you, organize a private auction, or help you to build a custom proposal process for complex requirements. 
               </p>
               <ul className="list-unstyled d-flex flex-wrap justify-content-center">
                 {team.map((member) => (
                   <li key={member.image}>
-                    <Link href={member.link}>
+                    {/* <Link href={member.link}>
                       <a>
                         <Avatar
                           image={member.image}
@@ -52,7 +52,14 @@ const Support = () => {
                           className="hover-animate mx-2 avatar-border-white"
                         />
                       </a>
-                    </Link>
+                    </Link> */}
+                    <Avatar
+                          image={member.image}
+                          alt=""
+                          size="lg"
+                          cover
+                          className="hover-animate mx-2 avatar-border-white"
+                        />
                   </li>
                 ))}
               </ul>
@@ -81,9 +88,10 @@ const Support = () => {
                 </Card.Header>
                 <Card.Body>
                   <p className="text-muted">
-                    For contracts above <strong>$200,000</strong> please call <strong>516 350 3316</strong>
+                    Fill out a request to chat and we will get back to you within 24 hours.
+                    If your RFP is urgent please call us for immediate service at <strong>516-350-3316</strong>.
                   </p>
-                  <Button href="#">Let us know</Button>
+                  {/* <Button href="#">Let us know</Button> */}
                 </Card.Body>
               </Card>
             </Col>

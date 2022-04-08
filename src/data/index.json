@@ -35,17 +35,17 @@
         "blocks": [
             {
                 "title": "My vendor cancelled and I need service tomorrow!",
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                "content": "Just set your price and post your contract to Light RFP's platform or call a Light RFP account executive to find available vendors ASAP.",
                 "icon": "destination-map-1"
             },
             {
                 "title": "My contract renews in 30 days; can I find a better price?",
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                "content": "Invite your current vendors to bid on an RFP along with Light RFP's network of vetted vendors to get great service at the best price.",
                 "icon": "pay-by-card-1"
             },
             {
                 "title": "My RFP is complex and confidential; I need an account manager",
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi sint.",
+                "content": "Our team of procurement professionals will understand your needs, make a market for private bids, and get your contract signed on your terms.",
                 "icon": "heart-1"
             }
         ]
