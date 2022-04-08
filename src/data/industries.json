@@ -6,19 +6,19 @@
     "swiperItems": [
         {
             "title": "Trucking",
-            "subtitle": "The big apple",
+            
             "img": "img/photo/one_truck.jpg",
             "link": "/category-2-rooms"
         },
         {
             "title": "Commercial Cleaning",
-            "subtitle": "Artist capital of Europe",
+            
             "img": "img/photo/commercial_cleaning.jpg",
             "link": "/category-2-rooms"
         },
         {
             "title": "Construction",
-            "subtitle": "Dalí, Gaudí, Barrio Gotico",
+            
             "img": "img/photo/construction_work.jpg",
             "link": "/category-2-rooms"
         }
