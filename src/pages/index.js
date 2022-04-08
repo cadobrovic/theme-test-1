@@ -104,41 +104,10 @@ const Index = () => {
           </Container>
         </section>
       )}
-      <Industries />
       {/* <LastMinute greyBackground /> */}
       
-      {/* *** Features *** */}
-      <section className="py-6">
-        <Container>
-          {featuresData.questionGroups &&
-            featuresData.questionGroups.map((group) => {
-              const groupedQuestions =
-                group.questions && groupByN(2, group.questions)
-              return (
-                <div key={group.title} className="py-4">
-                  <h2 className="mb-5 text-primary">{group.title}</h2>
-                  <Row>
-                    {groupedQuestions.map((questions) => (
-                      <Col md="6" key={questions[0].title}>
-                        {questions.map((question) => (
-                          <React.Fragment key={question.title}>
-                            <h5>{question.title}</h5>
-                            <p className="text-muted mb-4">
-                              {question.content}
-                            </p>
-                          </React.Fragment>
-                        ))}
-                      </Col>
-                    ))}
-                  </Row>
-                </div>
-              )
-            })}
-        </Container>
-      </section>
-
-      {/* *** PRICING *** */}
-      <section className="py-6">
+{/* *** PRICING *** */}
+<section className="py-6">
         <Container>
         <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
           <Row>
@@ -191,6 +160,40 @@ const Index = () => {
           </Row>
         </Container>
       </section>
+
+      {/* *** Features *** */}
+      <section className="py-6">
+        <Container>
+          {featuresData.questionGroups &&
+            featuresData.questionGroups.map((group) => {
+              const groupedQuestions =
+                group.questions && groupByN(2, group.questions)
+              return (
+                <div key={group.title} className="py-4">
+                  <h2 className="mb-5 text-primary">{group.title}</h2>
+                  <Row>
+                    {groupedQuestions.map((questions) => (
+                      <Col md="6" key={questions[0].title}>
+                        {questions.map((question) => (
+                          <React.Fragment key={question.title}>
+                            <h5>{question.title}</h5>
+                            <p className="text-muted mb-4">
+                              {question.content}
+                            </p>
+                          </React.Fragment>
+                        ))}
+                      </Col>
+                    ))}
+                  </Row>
+                </div>
+              )
+            })}
+        </Container>
+      </section>
+
+      
+      {/* Industries Section */}
+      <Industries />
       {/* *** SUPPORT SECTION *** */}
       <Support />
       {/* *** CALL TO ACTION *** */}

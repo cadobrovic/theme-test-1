@@ -34,7 +34,7 @@ const Support = () => {
           <Row>
             <Col lg="10" xl="8" className="mx-auto text-center">
               <h4 className="subtitle text-primary mb-4">
-                Light RFP Conceirge Service
+                Light RFP Concierge Service
               </h4>
               <p className="text-muted mb-5">
               Our team is standing by to take the pain out of RFPs. We can post RFPs to the platform for you, organize a private auction, or help you to build a custom proposal process for complex requirements. 
@@ -81,7 +81,7 @@ const Support = () => {
                       <h4 className="mb-0">Contact</h4>
                     </div>
                     <Icon
-                      icon="fountain-pen-1"
+                      icon="calls-1"
                       className="svg-icon-light w-3rem h-3rem ms-3 text-primary"
                     />
                   </div>

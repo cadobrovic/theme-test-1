@@ -5,7 +5,7 @@
     "columns": [
         {
             "title": "Poster",
-            "price": "5%",
+            "price": "Free",
             "items": [
                 {
                     "title": "RFP Auctions",
@@ -27,7 +27,7 @@
         },
         {
             "title": "Bidder",
-            "price": "Free",
+            "price": "5%",
             "items": [
                 {
                     "title": "Win New Contracts Today",
