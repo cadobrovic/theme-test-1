@@ -20,6 +20,7 @@ import blog from "../data/blog.json"
 import Icon from "../components/Icon"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleRight, faTimes, faCheck } from "@fortawesome/free-solid-svg-icons"
+import Industries from "../components/Industries"
 
 export async function getStaticProps() {
   return {
@@ -103,7 +104,7 @@ const Index = () => {
           </Container>
         </section>
       )}
-      {/* <Guides /> */}
+      <Industries />
       {/* <LastMinute greyBackground /> */}
       
       {/* *** Features *** */}
