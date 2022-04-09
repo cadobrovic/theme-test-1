@@ -25,7 +25,7 @@ import Industries from "../components/Industries"
 export async function getStaticProps() {
   return {
     props: {
-      hideFooter: true,
+      hideFooter: false,
       nav: {
         light: true,
         classes: "shadow",

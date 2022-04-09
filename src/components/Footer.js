@@ -25,7 +25,7 @@ const Footer = () => {
   const repoPath = '/theme-test-1/content/svg/'
   return (
     <footer className="position-relative z-index-10 d-print-none">
-      <div className="py-6 bg-gray-200 text-muted">
+      {/* <div className="py-6 bg-gray-200 text-muted">
         <Container>
           <Row>
             {footerContent &&
@@ -137,13 +137,13 @@ const Footer = () => {
               ))}
           </Row>
         </Container>
-      </div>
+      </div> */}
       <div className="py-4 fw-light bg-gray-800 text-gray-300">
         <Container>
           <Row className="align-items-center">
             <Col md="6" className="text-center text-md-start">
               <p className="text-sm mb-md-0">
-                © 2021, Your company. All rights reserved.
+                © 2022, Light RFP. All rights reserved.
               </p>
             </Col>
             <Col md="6">

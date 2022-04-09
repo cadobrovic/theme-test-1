@@ -6,13 +6,12 @@
     "swiperItems": [
         {
             "title": "Trucking",
-            
+
             "img": "img/photo/one_truck.jpg",
             "link": "/category-2-rooms"
         },
         {
             "title": "Commercial Cleaning",
-            
             "img": "img/photo/commercial_cleaning.jpg",
             "link": "/category-2-rooms"
         },

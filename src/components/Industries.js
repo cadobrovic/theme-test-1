@@ -38,8 +38,8 @@ const Industries = (props) => {
           imgCards
           roundLengths
           md={2}
-          lg={4}
-          xl={5}
+          lg={3}
+          xl={3}
           data={data.swiperItems}
         />
       </Container>
