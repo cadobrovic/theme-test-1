@@ -46,12 +46,15 @@ export async function getStaticProps() {
           />
         )} */}
 
-const Index = () => {
-  const groupByN = (n, data) => {
-    let result = []
-    for (let i = 0; i < data.length; i += n) result.push(data.slice(i, i + n))
-    return result
+  const Index = () => {
+    const groupByN = (n, data) => {
+      let result = []
+      for (let i = 0; i < data.length; i += n) result.push(data.slice(i, i + n))
+      return result
   }
+
+  const verticalMargins = 5;
+
   return (
     <React.Fragment>
       {/* <section className="hero-home">
@@ -106,8 +109,11 @@ const Index = () => {
       )}
       {/* <LastMinute greyBackground /> */}
       
-{/* *** PRICING *** */}
-<section className="py-6">
+      {/* Industries Section */}
+      <Industries />
+
+      {/* *** PRICING *** */}
+      <section className="py-6">
         <Container>
         <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
           <Row>
@@ -191,9 +197,6 @@ const Index = () => {
         </Container>
       </section>
 
-      
-      {/* Industries Section */}
-      <Industries />
       {/* *** SUPPORT SECTION *** */}
       <Support />
       {/* *** CALL TO ACTION *** */}
