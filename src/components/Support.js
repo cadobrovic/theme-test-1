@@ -88,7 +88,7 @@ const Support = () => {
                 </Card.Header>
                 <Card.Body>
                   <p className="text-muted">
-                    Fill out a request to chat and we will get back to you within 24 hours.
+                    Email us at <strong>concierge@lightrfp.com</strong> to chat and we will get back to you within 24 hours.
                     If your RFP is urgent please call us for immediate service at <strong>516-350-3316</strong>.
                   </p>
                   {/* <Button href="#">Let us know</Button> */}
