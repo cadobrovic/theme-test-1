@@ -3,6 +3,8 @@ import Link from "next/link"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Swiper from "./Swiper"
+import CardPoster from "./CardPoster"
+import IndustryCardHolder from "./IndustryCardHolder"
 
 import data from "../data/industries.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -31,17 +33,7 @@ const Industries = (props) => {
             )}
           </Col> */}
         </Row>
-        <Swiper
-          className="guides-slider mx-n2 pt-3 pb-5"
-          perView={1}
-          spaceBetween={20}
-          imgCards
-          roundLengths
-          md={2}
-          lg={3}
-          xl={3}
-          data={data.swiperItems}
-        />
+        <IndustryCardHolder data={data.swiperItems}/>
       </Container>
     </section>
   )
