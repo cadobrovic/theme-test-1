@@ -11,8 +11,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Industries = (props) => {
+  const { verticalMargin } = props
+  const py = `py-${verticalMargin ? verticalMargin : 6}`
   return (
-    <section className={`py-6 ${props.greyBackground ? "bg-gray-100" : ""}`}>
+    <section className={`${py} ${props.greyBackground ? "bg-gray-100" : ""}`}>
       <Container>
         <Row className="mb-5">
           <Col md="8">

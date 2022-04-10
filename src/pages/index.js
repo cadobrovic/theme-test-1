@@ -110,10 +110,10 @@ export async function getStaticProps() {
       {/* <LastMinute greyBackground /> */}
       
       {/* Industries Section */}
-      <Industries />
+      <Industries verticalMargin={verticalMargins}/>
 
       {/* *** PRICING *** */}
-      <section className="py-6">
+      <section className={`py-${verticalMargins}`}>
         <Container>
         <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
           <Row>
@@ -168,7 +168,7 @@ export async function getStaticProps() {
       </section>
 
       {/* *** Features *** */}
-      <section className="py-6">
+      <section className={`py-${verticalMargins}`}>
         <Container>
           {featuresData.questionGroups &&
             featuresData.questionGroups.map((group) => {
