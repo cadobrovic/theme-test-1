@@ -2,6 +2,7 @@ import React from "react"
 import Link from "next/link"
 import Image from "../components/CustomImage"
 import { Container, Row, Col, Card, Button, Breadcrumb } from "react-bootstrap"
+import * as Scroll from "react-scroll"
 
 import Swiper from "../components/Swiper"
 import SearchBar from "../components/SearchBar"
@@ -19,7 +20,11 @@ import featuresData from "../data/features_live.json"
 import blog from "../data/blog.json"
 import Icon from "../components/Icon"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDoubleRight, faTimes, faCheck } from "@fortawesome/free-solid-svg-icons"
+import {
+  faAngleDoubleRight,
+  faTimes,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons"
 import Industries from "../components/Industries"
 
 export async function getStaticProps() {
@@ -36,7 +41,8 @@ export async function getStaticProps() {
   }
 }
 
-{/* {data.hero.img && (
+{
+  /* {data.hero.img && (
           <Image
             src={`/content/img/photo/${data.hero.img}`}
             alt={data.hero.title}
@@ -44,16 +50,28 @@ export async function getStaticProps() {
             loading="eager"
             layout="fill"
           />
-        )} */}
+        )} */
+}
 
-  const Index = () => {
-    const groupByN = (n, data) => {
-      let result = []
-      for (let i = 0; i < data.length; i += n) result.push(data.slice(i, i + n))
-      return result
+const Index = () => {
+  const groupByN = (n, data) => {
+    let result = []
+    for (let i = 0; i < data.length; i += n) result.push(data.slice(i, i + n))
+    return result
   }
 
-  const verticalMargins = 5;
+  const verticalMargins = 5
+
+  const ScrollLink = Scroll.Link
+
+  const scrollLinkProps = {
+    // offset: -100,
+    // spy: true,
+    // smooth: true,
+    // activeClass: "active",
+    // className: "nav-link",
+    href: "#",
+  }
 
   return (
     <React.Fragment>
@@ -80,29 +98,53 @@ export async function getStaticProps() {
           <Container>
             <div className="text-center pb-lg-4 mb-5">
               <h2 className="mb-2">{data.topBlocks.title}</h2>
-              <p className="subtitle">
-                {data.topBlocks.subTitle}
-              </p>  
+              <p className="subtitle">{data.topBlocks.subTitle}</p>
             </div>
             <Row>
-              {data.topBlocks.blocks.map((block) => (
-                <Col
-                  key={block.title}
-                  lg="4"
-                  className="mb-3 mb-lg-0 text-center"
-                >
-                  <div className="px-0 px-lg-3">
-                    <div className="icon-rounded bg-primary-light mb-3">
-                      <Icon
-                        icon={block.icon}
-                        className="text-primary w-2rem h-2rem"
-                      />
+              {data.topBlocks.blocks.map((block, index) =>
+                index == 2 ? (
+                  <Col
+                    key={block.title}
+                    lg="4"
+                    className="mb-3 mb-lg-0 text-center"
+                  >
+                    <div className="px-0 px-lg-3">
+                      <div className="icon-rounded bg-primary-light mb-3">
+                        <Icon
+                          icon={block.icon}
+                          className="text-primary w-2rem h-2rem"
+                        />
+                      </div>
+                      <h3 className="h5">{block.title}</h3>
+                      <p className="text-muted">
+                        Our{' '}
+                        <ScrollLink to={"concierge"} {...scrollLinkProps}>
+                          procurement professionals
+                        </ScrollLink>
+                        {' '}will understand your needs, make a market for private
+                        bids, and get your contract signed on your terms.
+                      </p>
                     </div>
-                    <h3 className="h5">{block.title}</h3>
-                    <p className="text-muted">{block.content}</p>
-                  </div>
-                </Col>
-              ))}
+                  </Col>
+                ) : (
+                  <Col
+                    key={block.title}
+                    lg="4"
+                    className="mb-3 mb-lg-0 text-center"
+                  >
+                    <div className="px-0 px-lg-3">
+                      <div className="icon-rounded bg-primary-light mb-3">
+                        <Icon
+                          icon={block.icon}
+                          className="text-primary w-2rem h-2rem"
+                        />
+                      </div>
+                      <h3 className="h5">{block.title}</h3>
+                      <p className="text-muted">{block.content}</p>
+                    </div>
+                  </Col>
+                )
+              )}
             </Row>
           </Container>
         </section>
@@ -112,14 +154,12 @@ export async function getStaticProps() {
       {/* *** PRICING *** */}
       <section className={`py-${verticalMargins}`}>
         <Container>
-        <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
+          <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
           <Row>
             {priceData.columns &&
               priceData.columns.map((column, index) => (
                 <Col key={column.title} lg="6">
-                  <Card
-                    className={`mb-5 mb-lg-0 border-0 shadow`}
-                  >
+                  <Card className={`mb-5 mb-lg-0 border-0 shadow`}>
                     {/* {index === 1 && <div className="card-status bg-primary" />} */}
                     <Card.Body>
                       <h2 className="text-base subtitle text-center text-primary py-3">
@@ -163,9 +203,9 @@ export async function getStaticProps() {
           </Row>
         </Container>
       </section>
-      
+
       {/* Industries Section */}
-      <Industries verticalMargin={verticalMargins}/>
+      <Industries verticalMargin={verticalMargins} />
 
       {/* *** Features *** */}
       <section className={`py-${verticalMargins}`}>
