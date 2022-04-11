@@ -8,18 +8,18 @@
             "title": "Trucking",
 
             "img": "img/photo/one_truck.jpg",
-            "link": "/category-2-rooms"
+            "link": "/"
         },
         {
             "title": "Commercial Cleaning",
             "img": "img/photo/commercial_cleaning.jpg",
-            "link": "/category-2-rooms"
+            "link": "/"
         },
         {
             "title": "Construction",
             
             "img": "img/photo/construction_work.jpg",
-            "link": "/category-2-rooms"
+            "link": "/"
         }
     ]
 }
