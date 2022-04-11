@@ -5,7 +5,8 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap"
 
 import ActiveLink from "./../ActiveLink"
 
-import menu from "../../data/menu_new.json"
+import menu_new from "../../data/menu_new.json"
+import menu_dev from "../../data/menu_dev.json"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -14,6 +15,7 @@ import UserMenu from "./UserMenu"
 import DropdownMenuItem from "./DropdownMenuItem"
 import UseWindowSize from "../../hooks/UseWindowSize"
 const Header = (props) => {
+  const menu = menu_new;
   const [parentName, setParentName] = useState(false)
   const [collapsed, setCollapsed] = useState(false)
   const size = UseWindowSize()

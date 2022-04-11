@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import CardRestaurant from "./CardRestaurant"
 import CardRoom from "./CardRoom"
-import CardPoster from "./CardPoster"
+import IndustryCardPoster from "./IndustryCardPoster"
 import CardProperty from "./CardProperty"
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper"
 
@@ -70,7 +70,7 @@ const IndustryCardHolder = (props) => {
       <Row>
         {props.data.map((item, index) =>
           <Col key={item.title} lg="4">
-            <CardPoster data={item} />
+            <IndustryCardPoster data={item} />
           </Col>
         )}
       </Row>
