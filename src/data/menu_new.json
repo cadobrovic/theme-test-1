@@ -1,8 +1,16 @@
-[
-  {
-    "title": "Request beta access",
-    "link": "/signup",
-    "button": true,
-    "hideToLoggedUser": true
-  }
-]
+{
+  "title": "Light RFP",
+  "betaButton": {
+    "text": "Request beta access",
+    "link": "https://www.lightrfp.com"
+  },
+  "list": [
+    {
+      "title": "Request beta access",
+      "link": "https://www.lightrfp.com",
+      "button": true,
+      "hideToLoggedUser": true
+    }
+  ]
+}
+
