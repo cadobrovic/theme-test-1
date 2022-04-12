@@ -53,7 +53,7 @@
     "jumbotron": {
         "title": "The Platform For Procurement",
         "button": "Request Beta Access",
-        "link": "/category-rooms",
+        "link": "https://www.lightrfp.com",
         "img": "img/photo/trucks_compressed.jpg"
     },
     "testimonials": {
