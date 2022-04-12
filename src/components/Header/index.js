@@ -34,7 +34,13 @@ const Header = (props) => {
                   alt="Directory logo"
                 /> */}
 
-                <h4 className="hero-heading mb-0">Light RFP</h4>
+                <img
+                  src="/theme-test-1/content/img/photo/lrfp-logo-white-transparent.png"
+                  width="200"
+                  alt="Directory logo"
+                />
+
+                {/* <h4 className="hero-heading mb-0">Light RFP</h4> */}
               </Navbar.Brand>
             </Link>
             {/* END NAVBAR BRAND */}

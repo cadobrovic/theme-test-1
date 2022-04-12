@@ -1,11 +1,11 @@
 {
-  "name": "directory_react_theme",
-  "title": "Directory – Directory & Listing React Theme",
-  "version": "2.0.3",
+  "name": "Light RFP",
+  "title": "Light RFP",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://cadobrovic.github.io/theme-test-1",
-  "author": "Bootstrapious - https://bootstrapious.com",
-  "contact": "hello@bootstrapious.com",
+  "author": "Karlo Dobrovic",
+  "contact": "cadobrovic@gmail.com",
   "bugs": "",
   "scripts": {
     "dev": "next dev",
