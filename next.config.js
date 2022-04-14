@@ -5,7 +5,7 @@ const path = require("path")
 
 // NEEDS /theme-test-1 for github deployment without domain name
 
-const basePath = process.env.NODE_ENV === 'production' ? '/theme-test-1' : '';
+// const basePath = process.env.NODE_ENV === 'production' ? '/theme-test-1' : '';
 
 
 module.exports = withPlugins(
@@ -27,7 +27,7 @@ module.exports = withPlugins(
       production_type: "static", // Change variable to "static" for STATIC EXPORT
     },
     trailingSlash: true, // Uncomment this line for STATIC EXPORT
-    basePath: '/theme-test-1',
-    assetPrefix: '/theme-test-1/',
+    // basePath: '/theme-test-1',
+    // assetPrefix: '/theme-test-1/',
   }
 )
