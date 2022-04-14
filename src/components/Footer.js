@@ -21,8 +21,10 @@ import {
   faVimeo,
 } from "@fortawesome/free-brands-svg-icons"
 
+// NEEDS /theme-test-1 for github deployment without domain name
+
 const Footer = () => {
-  const repoPath = '/theme-test-1/content/svg/'
+  const repoPath = '/content/svg/'
   return (
     <footer className="position-relative z-index-10 d-print-none">
       {/* <div className="py-6 bg-gray-200 text-muted">

@@ -6,6 +6,8 @@ import ActiveLink from "../ActiveLink"
 
 import menu_new from "../../data/menu_new.json"
 
+// NEEDS /theme-test-1 for github deployment without domain name
+
 const Header = (props) => {
   const menu = menu_new
 
@@ -35,7 +37,7 @@ const Header = (props) => {
                 /> */}
 
                 <img
-                  src="/theme-test-1/content/img/photo/lrfp-logo-italic-transparent.png"
+                  src="/content/img/photo/lrfp-logo-italic-transparent.png"
                   width="160rem"
                   alt="Directory logo"
                 />

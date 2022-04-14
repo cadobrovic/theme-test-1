@@ -13,6 +13,9 @@ import SearchForm from "./SearchForm"
 import UserMenu from "./UserMenu"
 import DropdownMenuItem from "./DropdownMenuItem"
 import UseWindowSize from "../../hooks/UseWindowSize"
+
+// NEEDS /theme-test-1 for github deployment without domain name
+
 const HeaderDev = (props) => {
   const menu = menu_dev
   const [parentName, setParentName] = useState(false)
@@ -70,7 +73,7 @@ const HeaderDev = (props) => {
             <Link href="/" passHref>
               <Navbar.Brand className="py-1">
                 <img
-                  src="/theme-test-1/content/svg/logo.svg"
+                  src="/content/svg/logo.svg"
                   width="138"
                   height="31"
                   alt="Directory logo"

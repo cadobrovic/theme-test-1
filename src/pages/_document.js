@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
 
+// NEEDS /theme-test-1 for github deployment without domain name
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -15,7 +17,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href="/theme-test-1/static/favicon.png" />
+          <link rel="shortcut icon" href="/static/favicon.png" />
         </Head>
         <body>
           <Main />

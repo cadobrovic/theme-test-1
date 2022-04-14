@@ -1,11 +1,13 @@
 import React from "react"
 import Image from "next/image"
 
+// NEEDS /theme-test-1 for github deployment without domain name
+
 const CustomImage = (props) => {
   if (process.env.production_type === "static") {
     return (
       <img
-        src={`/theme-test-1${props.src}`}
+        src={`${props.src}`}
         alt={props.alt}
         width={props.width}
         height={props.height}

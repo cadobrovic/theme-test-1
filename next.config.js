@@ -3,7 +3,9 @@ const withPlugins = require("next-compose-plugins")
 const reactSvg = require("next-react-svg")
 const path = require("path")
 
-// const basePath = process.env.NODE_ENV === 'production' ? '/theme-test-1' : '';
+// NEEDS /theme-test-1 for github deployment without domain name
+
+const basePath = process.env.NODE_ENV === 'production' ? '/theme-test-1' : '';
 
 
 module.exports = withPlugins(
