@@ -2,12 +2,12 @@
   "title": "Light RFP",
   "betaButton": {
     "text": "Request access",
-    "link": "https://platform.lightrfp.com"
+    "link": "https://platform.lightrfp.com/signup"
   },
   "list": [
     {
       "title": "Request access",
-      "link": "https://platform.lightrfp.com",
+      "link": "https://platform.lightrfp.com/signup",
       "button": true,
       "hideToLoggedUser": true
     }
