@@ -38,7 +38,7 @@ const Header = (props) => {
 
                 <img
                   src="/content/img/photo/lrfp-logo-italic-transparent.png"
-                  width="130rem"
+                  width="160rem"
                   alt="Directory logo"
                 />
 
