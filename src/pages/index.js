@@ -210,6 +210,7 @@ const Index = () => {
       {/* *** Features *** */}
       <section className={`py-${verticalMargins}`}>
         <Container>
+          <h1 className="hero-heading mb-4">Platform Features</h1>
           {featuresData.questionGroups &&
             featuresData.questionGroups.map((group) => {
               const groupedQuestions =

@@ -19,7 +19,7 @@ const Industries = (props) => {
         <Row className="mb-5">
           <Col md="8">
             {/* <p className="subtitle text-primary">{data.subTitle}</p> */}
-            <h2>{data.title}</h2>
+            <h1>{data.title}</h1>
           </Col>
           {/* <Col
             md="4"
