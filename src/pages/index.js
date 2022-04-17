@@ -154,7 +154,7 @@ const Index = () => {
       {/* *** PRICING *** */}
       <section className={`py-${verticalMargins}`}>
         <Container>
-          <h1 className="hero-heading mb-4">{priceData.subtitle}</h1>
+          <h1 className="mb-4">{priceData.subtitle}</h1>
           <Row>
             {priceData.columns &&
               priceData.columns.map((column, index) => (
@@ -210,13 +210,13 @@ const Index = () => {
       {/* *** Features *** */}
       <section className={`py-${verticalMargins}`}>
         <Container>
-          <h1 className="hero-heading mb-4">Platform Features</h1>
+          <h1 className="mb-4">Platform Features</h1>
           {featuresData.questionGroups &&
             featuresData.questionGroups.map((group) => {
               const groupedQuestions =
                 group.questions && groupByN(2, group.questions)
               return (
-                <div key={group.title} className="py-4">
+                <div key={group.title} className="pb-4">
                   <h2 className="mb-5 text-primary">{group.title}</h2>
                   <Row>
                     {groupedQuestions.map((questions) => (

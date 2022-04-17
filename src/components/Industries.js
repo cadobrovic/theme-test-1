@@ -16,12 +16,12 @@ const Industries = (props) => {
   return (
     <section className={`${py} ${props.greyBackground ? "bg-gray-100" : ""}`}>
       <Container>
-        <Row className="mb-5">
-          <Col md="8">
-            {/* <p className="subtitle text-primary">{data.subTitle}</p> */}
-            <h1>{data.title}</h1>
-          </Col>
-          {/* <Col
+        {/* <Row className="mb-5"> */}
+        <Col md="8">
+          {/* <p className="subtitle text-primary">{data.subTitle}</p> */}
+          <h1 className="mb-4">{data.title}</h1>
+        </Col>
+        {/* <Col
             md="4"
             className="d-lg-flex align-items-center justify-content-end"
           >
@@ -34,8 +34,8 @@ const Industries = (props) => {
               </Link>
             )}
           </Col> */}
-        </Row>
-        <IndustryCardHolder data={data.swiperItems}/>
+        {/* </Row> */}
+        <IndustryCardHolder data={data.swiperItems} />
       </Container>
     </section>
   )
