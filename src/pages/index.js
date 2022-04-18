@@ -36,7 +36,7 @@ export async function getStaticProps() {
         classes: "shadow",
         color: "white",
       },
-      title: "Home",
+      title: "The Marketplace For RFPs",
     },
   }
 }
