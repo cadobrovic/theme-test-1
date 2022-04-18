@@ -29,7 +29,6 @@ const Layout = (pageProps) => {
       >
         <Head>
           <title>{pageProps.title} - Light RFP</title>
-          <p>Bid on RFPs | No Negotiation | No Redlines | No Delays</p>
           <link rel="icon" href="/favicon.png" />
         </Head>
         <NextNProgress color="#4E66F8" options={{ showSpinner: false }} />
