@@ -8,11 +8,11 @@
             "price": "Free",
             "items": [
                 {
-                    "title": "RFP Auctions",
+                    "title": "RFP Auctions - Bid or Buy now",
                     "status": true
                 },
                 {
-                    "title": "Contract Your Way",
+                    "title": "The Contract Posted Is The Contract Signed",
                     "status": true
                 },
                 {
@@ -34,15 +34,15 @@
                     "status": true
                 },
                 {
-                    "title": "Document Review",
+                    "title": "Pre-signing Document Review",
                     "status": true
                 },
                 {
-                    "title": "Digital Signing",
+                    "title": "Digital Contract Signing",
                     "status": true
                 },
                 {
-                    "title": "Seamless Onboarding",
+                    "title": "Seamless Operations Onboarding",
                     "status": true
                 }
             ]
