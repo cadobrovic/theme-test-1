@@ -5,6 +5,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import ActiveLink from "../ActiveLink"
 
 import menu_new from "../../data/menu_new.json"
+import menu_dev from "../../data/menu_dev.json"
 
 // NEEDS /theme-test-1 for github deployment without domain name
 

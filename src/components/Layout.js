@@ -3,6 +3,7 @@ import Head from "next/head"
 import NextNProgress from "../components/NextNProgress"
 
 import Header from "./Header"
+import HeaderDev from "./Header/index_dev"
 import Footer from "./Footer"
 import { FormProvider } from "../components/FormContext"
 import { BookingProvider } from "../components/BookingContext"
@@ -30,8 +31,11 @@ const Layout = (pageProps) => {
         <Head>
           <title>{pageProps.title} - Light RFP</title>
           <link rel="icon" href="/favicon.png" />
+          <meta property="og:title" content={`${pageProps.title} - Light RFP`}/>
+          <meta property="og:image" content="/content/img/photo/lrfp-logo-italic-transparent.png" />
         </Head>
         <NextNProgress color="#4E66F8" options={{ showSpinner: false }} />
+        {/* change this to HeaderDev when in development */}
         {!pageProps.hideHeader && <Header {...headerProps} />}
         {pageProps.listingForm || pageProps.bookingForm ? (
           <React.Fragment>

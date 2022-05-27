@@ -18,6 +18,11 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/static/favicon.png" />
+
+          <meta charset="UTF-8" />
+          <meta name="keywords" content="titla, meta, nextjs" />
+          <meta name="author" content="Karlo Dobrovic" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <body>
           <Main />
