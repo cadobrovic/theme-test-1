@@ -32,7 +32,7 @@ const Layout = (pageProps) => {
           <title>{pageProps.title} - Light RFP</title>
           <link rel="icon" href="/favicon.png" />
           <meta property="og:title" content={`${pageProps.title} - Light RFP`}/>
-          <meta property="og:image" content="/content/img/photo/lrfp-logo-italic-transparent.png" />
+          <meta property="og:image" content="/content/img/photo/trucks_compressed.jpg" />
         </Head>
         <NextNProgress color="#4E66F8" options={{ showSpinner: false }} />
         {/* change this to HeaderDev when in development */}
