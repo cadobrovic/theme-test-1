@@ -8,7 +8,7 @@
             "price": "Free",
             "items": [
                 {
-                    "title": "RFP Auctions - Bid or Buy now",
+                    "title": "RFP Auctions - Vendors Bid or Buy Now To Fulfill Your Contract",
                     "status": true
                 },
                 {
@@ -22,6 +22,10 @@
                 {
                     "title": "No Fees For Posting",
                     "status": true
+                },
+                {
+                    "title": "All Insurance, W-9, and Licensing Details Provided Post Auction",
+                    "status": true
                 }
             ]
         },
@@ -34,7 +38,7 @@
                     "status": true
                 },
                 {
-                    "title": "Pre-signing Document Review",
+                    "title": "Pre-bid Document Review - No Redline Delays",
                     "status": true
                 },
                 {
@@ -43,6 +47,10 @@
                 },
                 {
                     "title": "Seamless Operations Onboarding",
+                    "status": true
+                },
+                {
+                    "title": "Insurance, W-9, and Licensing Details Provided Post Auction",
                     "status": true
                 }
             ]
