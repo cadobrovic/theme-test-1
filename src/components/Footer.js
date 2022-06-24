@@ -143,7 +143,7 @@ const Footer = () => {
       <div className="py-4 fw-light bg-gray-800 text-gray-300">
         <Container>
         {/* className="align-items-center" */}
-          <Row >
+          <Row className="justify-content-between">
             <Col md="3" className="text-center text-md-start">
               <p className="text-sm mb-md-0">
                 © 2022, Light RFP. All rights reserved.
