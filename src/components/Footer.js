@@ -142,13 +142,22 @@ const Footer = () => {
       </div> */}
       <div className="py-4 fw-light bg-gray-800 text-gray-300">
         <Container>
-          <Row className="align-items-center">
-            <Col md="6" className="text-center text-md-start">
+        {/* className="align-items-center" */}
+          <Row >
+            <Col md="3" className="text-center text-md-start">
               <p className="text-sm mb-md-0">
                 © 2022, Light RFP. All rights reserved.
               </p>
             </Col>
-            <Col md="6">
+            <Col md="3" className="text-center">
+              <p className="text-sm mb-md-0">
+                DOT: 3894317
+              </p>
+              <p className="text-sm mb-md-0">
+                MC: 1432727
+              </p>
+            </Col>
+            <Col md="3">
               <ul className="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
                 <li className="list-inline-item">
                   <img
